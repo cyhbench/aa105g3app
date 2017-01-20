@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCreamyWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5pt"
+            android:text="私廚訂價"
+            android:textSize="14pt"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_chef_ord_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="內容:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/et_chef_ord_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_chef_ord_cnt"
+                android:layout_toRightOf="@+id/tv_chef_ord_cnt"
+                android:text="訂單內容"
+                android:textSize="18dp"
+                android:lines="2"
+                android:maxLines="10"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvMessage4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_chef_act_date_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="執行時間:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/et_chef_act_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_chef_act_date_v"
+                android:layout_toRightOf="@+id/tv_chef_act_date_v"
+                android:hint="執行時間"
+                android:textSize="18dp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_chef_act_date"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/et_chef_act_date"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="點選選擇日期" />-->
+
+            <!--<RadioGroup-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/tv_chef_act_date"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/rg_rb_noon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="午(10:00~14:00)" />-->
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/rg_rb_evening"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="晚(16:00~20:00)" />-->
+
+            <!--</RadioGroup>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_chef_act_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="選擇時間" />-->
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvMessage3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_chef_ord_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="執行地址:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/et_chef_ord_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_chef_ord_place"
+                android:layout_toRightOf="@+id/tv_chef_ord_place"
+                android:text="訂單執行地址"
+                android:textSize="18dp"
+                android:lines="2"
+                android:maxLines="4"/>
+        </RelativeLayout>
+
+        <!--<DatePicker-->
+        <!--android:id="@+id/dp_chef_act_date"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"  >-->
+        <!--</DatePicker>-->
+        <!--android:calendarViewShown="true"-->
+        <TextView
+            android:id="@+id/tvMessage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_chef_ord_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="訂單金額："
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/et_chef_ord_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="請輸入預設定價"
+                android:textColor="@color/blue"
+                android:textSize="18dp"
+                android:layout_alignBaseline="@+id/tv_chef_ord_cost"
+                android:layout_toRightOf="@+id/tv_chef_ord_cost"
+                android:inputType="number"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvMessage6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_member_agree_order_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bt_member_deny_order_update"
+                android:onClick="onChefOrderListAgreeClick"
+                android:text="回傳定價" />
+
+            <Button
+                android:id="@+id/bt_member_deny_order_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:onClick="onChefOrderListDenyClick"
+                android:text="Back" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

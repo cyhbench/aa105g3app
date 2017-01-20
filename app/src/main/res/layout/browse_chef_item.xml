@@ -1,0 +1,99 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/iv_browse_chef_chef_image"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/new_logo3" />
+
+        <TextView
+            android:id="@+id/tv_browse_chef_chef_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="私廚名"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:textSize="@dimen/abc_text_size_subtitle_material_toolbar" />
+
+        <TextView
+            android:id="@+id/tv_browse_chef_chef_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="服務地區"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:textSize="@dimen/abc_text_size_subtitle_material_toolbar" />
+
+        <TextView
+            android:id="@+id/tv_browse_chef_chef_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="菜單"
+            android:textSize="@dimen/abc_text_size_subtitle_material_toolbar" />
+
+        <TextView
+            android:id="@+id/tv_browse_chef_chef_intr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="簡介"
+            android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+            android:lines="2"
+            android:maxLines="10"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_browse_recipe_add_in_coll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true" />
+            <!--android:text=" (長按加入收藏)"-->
+
+            <ImageView
+                android:id="@+id/browser_chef_add_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/like_red"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/browser_chef_remove_from_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/like_black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

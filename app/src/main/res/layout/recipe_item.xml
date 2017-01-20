@@ -1,0 +1,103 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="4px"
+        android:paddingLeft="4px"
+        android:paddingRight="4px"
+        android:paddingTop="4px">
+
+
+        <TextView
+            android:id="@+id/tv_recipe_member_page_recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="食譜名稱"
+            android:textColor="#2b1100"
+            android:textSize="@dimen/abc_text_size_headline_material" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_recipe_member_page_recipe_by_who"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:text="食譜作者"
+                android:textColor="@color/secondary_text_default_material_light"
+                android:textSize="@dimen/abc_text_size_subtitle_material_toolbar" />
+
+            <TextView
+                android:id="@+id/tv_insert_recipe_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/red"
+                android:onClick="onInsertRecipeContClick"
+                android:text="編輯步驟"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_tv_recipe_member_page_recipe_pic"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/new_logo3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_recipe_member_page_recipe_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="發表時間" />
+
+            <TextView
+                android:id="@+id/tv_recipe_member_page_recipe_total_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="觀看總人數" />
+            <!--<TextView-->
+            <!--android:id="@+id/tv_recipe_member_page_recipe_total_views"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="觀看總人數"-->
+            <!--android:layout_toLeftOf="@+id/tv_recipe_member_page_add_in_coll"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_recipe_member_page_add_in_coll"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" (長按加入收藏)"-->
+            <!--android:layout_alignParentRight="true"/>-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

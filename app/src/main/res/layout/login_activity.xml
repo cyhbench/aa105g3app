@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享食光"
+        android:textSize="24pt"
+        android:layout_gravity="center"
+        android:textColor="@color/black" />
+    <ImageView
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:src="@drawable/new_logo3"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/et_login_member_mem_ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="@string/hint_etUser">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_login_member_mem_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_etPassword"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_Login" />
+
+    <TextView
+        android:id="@+id/tv_login_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

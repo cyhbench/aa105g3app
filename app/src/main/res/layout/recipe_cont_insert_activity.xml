@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCreamyWhite">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCreamyWhite"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+<LinearLayout
+    android:id="@+id/mLinearLayou"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_insert_recipe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5pt"
+            android:text="新增食譜步驟"
+            android:textSize="14pt"
+            android:textColor="@color/black" />
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mLinearLayou" />
+
+
+        <ScrollView
+            android:id="@+id/add_recipe_cont_step"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvMessage">
+
+            <RelativeLayout
+                android:id="@+id/mlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--rls: RelativeLayout step -->
+                <RelativeLayout
+                    android:id="@+id/rls1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorOrange"
+                    android:padding="5pt">
+
+                    <!--ivsp: ImageView step picture-->
+                    <ImageView
+                        android:id="@+id/ivsp1"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="20pt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_image" />
+                    
+                    <!--ststp: :Button step take picture-->
+                    <Button
+                        android:id="@+id/btstp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20pt"
+                        android:layout_toRightOf="@+id/ivsp1"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContInsertTakePicClick1"
+                        android:text="拍照" />
+
+                    <!--btspp : Button step pick picture-->
+                    <Button
+                        android:id="@+id/btspp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btstp1"
+                        android:layout_below="@+id/btstp1"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContPickPicClick1"
+                        android:text="選照片" />
+                    
+                    <!--etrs : EditText Recipe Step-->
+                    <EditText
+                        android:id="@+id/etrs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsp1"
+                        android:hint="步驟1"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rls2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rls1"
+                    android:background="@color/colorOrange"
+                    android:padding="5pt"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivsp2"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="20pt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_image" />
+
+                    <Button
+                        android:id="@+id/btstp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20pt"
+                        android:layout_toRightOf="@+id/ivsp2"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContInsertTakePicClick2"
+                        android:text="拍照" />
+
+                    <Button
+                        android:id="@+id/btspp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btstp2"
+                        android:layout_below="@+id/btstp2"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContPickPicClick2"
+                        android:text="選照片" />
+
+                    <EditText
+                        android:id="@+id/etrs2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsp2"
+                        android:hint="步驟2"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rls3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rls2"
+                    android:background="@color/colorOrange"
+                    android:padding="5pt"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivsp3"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="20pt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_image" />
+
+                    <Button
+                        android:id="@+id/btstp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20pt"
+                        android:layout_toRightOf="@+id/ivsp3"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContInsertTakePicClick3"
+                        android:text="拍照" />
+
+                    <Button
+                        android:id="@+id/btspp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btstp3"
+                        android:layout_below="@+id/btstp3"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContPickPicClick3"
+                        android:text="選照片" />
+
+                    <EditText
+                        android:id="@+id/etrs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsp3"
+                        android:hint="步驟3"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rls4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rls3"
+                    android:background="@color/colorOrange"
+                    android:padding="5pt"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivsp4"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="20pt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_image" />
+
+                    <Button
+                        android:id="@+id/btstp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20pt"
+                        android:layout_toRightOf="@+id/ivsp4"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContInsertTakePicClick4"
+                        android:text="拍照" />
+
+                    <Button
+                        android:id="@+id/btspp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btstp4"
+                        android:layout_below="@+id/btstp4"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContPickPicClick4"
+                        android:text="選照片" />
+
+                    <EditText
+                        android:id="@+id/etrs4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsp4"
+                        android:hint="步驟4"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rls5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rls4"
+                    android:background="@color/colorOrange"
+                    android:padding="5pt"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivsp5"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="20pt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_image" />
+
+                    <Button
+                        android:id="@+id/btstp5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20pt"
+                        android:layout_toRightOf="@+id/ivsp5"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContInsertTakePicClick5"
+                        android:text="拍照" />
+
+                    <Button
+                        android:id="@+id/btspp5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btstp5"
+                        android:layout_below="@+id/btstp5"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContPickPicClick5"
+                        android:text="選照片" />
+
+                    <EditText
+                        android:id="@+id/etrs5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsp5"
+                        android:hint="步驟5"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rls6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rls5"
+                    android:background="@color/colorOrange"
+                    android:padding="5pt"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivsp6"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="20pt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_image" />
+
+                    <Button
+                        android:id="@+id/btstp6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20pt"
+                        android:layout_toRightOf="@+id/ivsp6"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContInsertTakePicClick6"
+                        android:text="拍照" />
+
+                    <Button
+                        android:id="@+id/btspp6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btstp6"
+                        android:layout_below="@+id/btstp6"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContPickPicClick6"
+                        android:text="選照片" />
+
+                    <EditText
+                        android:id="@+id/etrs6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsp6"
+                        android:hint="步驟6"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rls7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rls6"
+                    android:background="@color/colorOrange"
+                    android:padding="5pt"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivsp7"
+                        android:layout_width="50pt"
+                        android:layout_height="50pt"
+                        android:layout_marginLeft="20pt"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_image" />
+
+                    <Button
+                        android:id="@+id/btstp7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20pt"
+                        android:layout_toRightOf="@+id/ivsp7"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContInsertTakePicClick7"
+                        android:text="拍照" />
+
+                    <Button
+                        android:id="@+id/btspp7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/btstp7"
+                        android:layout_below="@+id/btstp7"
+                        android:layout_marginTop="3pt"
+                        android:background="@color/colorCreamyWhite"
+                        android:onClick="onRecipeContPickPicClick7"
+                        android:text="選照片" />
+
+                    <EditText
+                        android:id="@+id/etrs7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsp7"
+                        android:hint="步驟7"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="10"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_recipe_cont_step">
+
+            <Button
+                android:id="@+id/bt_add_recipe_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRecipeContInsert_AddStepClick"
+                android:text="新增步驟" />
+
+            <Button
+                android:id="@+id/bt_recipe_cont_insert_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bt_recipe_cont_insert_cancel"
+                android:onClick="onRecipeContInsertClick"
+                android:text="送出新增" />
+
+            <Button
+                android:id="@+id/bt_recipe_cont_insert_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:onClick="onRecipeContInsertCancelClick"
+                android:text="取消新增" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
