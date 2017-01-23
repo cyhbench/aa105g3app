@@ -1,0 +1,81 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorOrange"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorCreamyWhite">
+            <ImageView
+                android:id="@+id/iv_member_page_mem_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/new_logo3"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left|top"/>
+            <TextView
+                android:id="@+id/tv_member_page_member_mem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="會員名稱"
+                android:textSize="12pt"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center|left"
+                android:layout_toRightOf="@+id/iv_member_page_mem_image"
+                android:layout_centerVertical="true"/>
+            <Button
+                android:id="@+id/bt_member_page_recipe_insert"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:text="新增食譜"
+                android:textSize="8pt"
+                android:layout_gravity="end"
+                android:onClick="onRecipeInsertClick"
+                android:textColor="@color/colorCreamyWhite"
+                android:background="@color/red"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/bt_member_page_member_update"/>
+            <Button
+                android:id="@+id/bt_member_page_member_update"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:text="修改資料"
+                android:textSize="8pt"
+                android:layout_gravity="end"
+                android:onClick="onMemberUpdateClick"
+                android:textColor="@color/colorCreamyWhite"
+                android:background="@color/colorGreen"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"/>
+        <!--app:tabMode="scrollable"-->
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCreamyWhite"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

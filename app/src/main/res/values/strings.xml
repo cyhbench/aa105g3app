@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">分享食光會員中心_測試</string>
+
+    <!--Search-->
+    <string name="search_title">Search</string>
+    <string name="search_test">qqq test</string>
+
+
+    <!--請求權限-->
+    <string name="text_ShouldGrant">Permission to write to external storage should be granted</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--登入-->
+    <string name="hint_etUser">請輸入帳號</string>
+    <string name="hint_etPassword">請輸入密碼</string>
+    <string name="text_Login">請登入</string>
+    <string name="msg_InvalidUserOrPassword">帳號或密碼錯誤</string>
+
+    <!--<string name="app_name">分享食光會員中心_測試</string>-->
+
+    <string name="msg_NoChefsFound">找不到該私廚</string>
+    <string name="msg_NoMembersFound">找不到該會員</string>
+    <string name="msg_NoNetwork">連不上網路</string>
+
+    <string name="msg_NoRecipeContFound">找不到該食譜內容</string>
+    <string name="msg_NoRecipeFound">找不到該食譜</string>
+
+    <!--<string name="msg_InvalidUserOrPassword">User name or password invalid</string>-->
+    <string name="msg_NoCollectionsFound">尚未收藏</string>
+    <string name="msg_NoRecipesFound">找不到食譜</string>
+    <string name="msg_NoChefFound">找不到私廚</string>
+
+    <!--私廚訂單-->
+    <string name="msg_NoChefOrderListFound">找不到訂單</string>
+
+
+    <string name="msg_NoCameraApp">相機沒開</string>
+
+    <!--Recipe Type-->
+    <string name="msg_NoRecipeLTypeFound">找不到標籤</string>
+
+    <!--Frd_list-->
+    <string name="msg_NoFrd_listsFound">尚未有好友</string>
+    <string name="text_UpdateAgree">同意</string>
+    <string name="text_UpdateDeny">不同意</string>
+    <string name="text_Delete">刪除</string>
+    <string name="text_UpdateInviteCancel">取消邀請</string>
+    <string name="msg_DeleteFail">刪除失敗</string>
+    <string name="msg_DeleteSuccess">刪除成功</string>
+    <string name="msg_CancelInvite">不同意邀請</string>
+    <string name="msg_AgreeInvite">同意邀請</string>
+    <string name="msg_CancelInviteFail">取消邀請失敗</string>
+    <string name="msg_UpdateInviteCancel">取消邀請</string>
+    <string name="msg_UpdateInviteCancelFail">取消邀請失敗</string>
+    <string name="text_AddToFrd">新增好友</string>
+    <string name="text_AddToMember">收藏會員</string>
+
+    <!--Collection-->
+    <string name="msg_FellowCollectionSuccess">追隨私廚</string>
+    <string name="msg_StopFellowCollectionSuccess">停止追隨</string>
+    <string name="text_AddToCollection">加入收藏</string>
+    <string name="msg_AddToCollectionSuccess">加入成功</string>
+    <string name="msg_AddToCollectionFail">您已收藏</string>
+    <string name="text_DeleteFromCollection">取消收藏</string>
+    <string name="msg_DeleteFromCollectionFail">取消收藏失敗</string>
+    <string name="msg_DeleteFromCollectionSuccess">取消收藏成功</string>
+    <string name="msg_CollectionNoFind">尚未收藏</string>
+
+    <!--輸入格式錯誤-->
+    <string name="msg_ErrorInput">輸入格式錯誤</string>
+    <!--talk-->
+    <string name="text_Send">Send</string>
+    <string name="text_MessageEmpty">空訊息</string>
+    <string name="text_LeftChatRoom">離開聊天</string>
+
+    <!--QQQ-->
+
+</resources>

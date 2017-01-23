@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="首頁"
+        android:id="@+id/nav_item_main"
+        android:icon="@drawable/home" />
+
+    <item android:title="登入"
+        android:id="@+id/nav_item_login"
+        android:icon="@drawable/login" />
+
+    <item android:title="個人頁面"
+        android:id="@+id/nav_item_personal_page"
+        android:icon="@drawable/person"
+        android:visible="false"/>
+
+    <!--<item android:title="需求訂單"-->
+        <!--android:id="@+id/nav_item_chef_order_list"-->
+        <!--android:icon="@drawable/sent"-->
+        <!--android:visible="false"/>-->
+
+    <item android:title="我的私廚訂單"
+        android:id="@+id/nav_item_chef_order_list_for_member"
+        android:icon="@drawable/list"
+        android:visible="false"/>
+
+    <item android:title="我的會員訂單"
+        android:id="@+id/nav_item_chef_order_list_for_chef"
+        android:icon="@drawable/list"
+        android:visible="false"/>
+
+    <item android:title="個人-食譜收藏"
+        android:id="@+id/nav_item_collection_recipe"
+        android:icon="@drawable/like"
+        android:visible="false"/>
+
+    <item android:title="個人-會員收藏"
+        android:id="@+id/nav_item_collection_member"
+        android:icon="@drawable/like"
+        android:visible="false"/>
+
+    <item android:title="個人-私廚收藏"
+        android:id="@+id/nav_item_collection_chef"
+        android:icon="@drawable/like"
+        android:visible="false"/>
+
+    <!--<item android:title="食譜瀏覽"-->
+          <!--android:id="@+id/nav_item_recipe"-->
+          <!--android:icon="@drawable/recipe"/>-->
+
+    <!--<item android:title="私廚瀏覽"-->
+        <!--android:id="@+id/nav_item_chef"-->
+        <!--android:icon="@drawable/chef"/>-->
+
+    <!--<item android:title="會員中心"-->
+          <!--android:id="@+id/nav_item_member"-->
+          <!--android:icon="@drawable/sent"/>-->
+
+
+    <!--<item android:title="實況"-->
+        <!--android:id="@+id/nav_item_live"-->
+        <!--android:icon="@drawable/draft"/>-->
+
+    <item android:title="登出"
+        android:id="@+id/nav_item_logout"
+        android:icon="@drawable/logout"
+        android:visible="false"/>
+
+
+    <item android:title="逛逛食譜">
+        <menu>
+            <item
+                android:id="@+id/nav_item_rl0001"
+                android:title="家常食材"
+                android:icon="@drawable/recipe"/>
+            <item
+                android:id="@+id/nav_item_rl0002"
+                android:title="家常菜"
+                android:icon="@drawable/recipe"/>
+            <item
+                android:id="@+id/nav_item_rl0003"
+                android:title="點心烘焙"
+                android:icon="@drawable/recipe"/>
+            <item
+                android:id="@+id/nav_item_rl0004"
+                android:title="季節節慶"
+                android:icon="@drawable/recipe"/>
+            <!--<item-->
+                <!--android:id="@+id/nav_item_rl0005"-->
+                <!--android:title="飲料冰品"-->
+                <!--android:icon="@drawable/recipe"/>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_item_rl0006"-->
+                <!--android:title="異國料理"-->
+                <!--android:icon="@drawable/recipe"/>-->
+        </menu>
+    </item>
+
+    <!--<group android:id="@+id/group_settings_id">-->
+
+        <!--<item android:title="Settings"-->
+              <!--android:icon="@drawable/settings"/>-->
+        <!--<item android:title="Help"-->
+             <!--android:icon="@drawable/help"/>-->
+    <!--</group>-->
+
+
+
+
+</menu>

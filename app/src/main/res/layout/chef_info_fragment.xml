@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ron.idv.tabviewpagerdemo.ron.idv.com.recipe.RecipeFragment">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/swipeRefreshLayoutRecipeCond"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorCreamyWhite">
+        <!--為了避免頁面被吃掉 所以增加marginBottom-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_chef_page_chef_info_chef_image"
+                android:layout_width="match_parent"
+                android:layout_height="800px"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/new_logo3" />
+
+            <TextView
+                android:id="@+id/tv_chef_page_chef_info_chef_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5pt"
+                android:text="姓名"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/tv_chef_page_chef_info_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5pt"
+                android:lines="2"
+                android:maxLines="10"
+                android:text="專長"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/tv_chef_page_chef_info_chef_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5pt"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="4"
+                android:text="服務地區"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/tv_chef_page_chef_info_chef_intr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5pt"
+                android:lines="2"
+                android:maxLines="10"
+                android:text="簡介"
+                android:textSize="10pt"
+                />
+
+            <TextView
+                android:id="@+id/tv_chef_page_chef_info_chef_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5pt"
+                android:text="菜單"
+                android:textSize="10pt" />
+
+            <ImageView
+                android:id="@+id/iv_chef_page_chef_info_chef_reci_image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/iv_chef_page_chef_info_chef_reci_image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/iv_chef_page_chef_info_chef_reci_image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/iv_chef_page_chef_info_chef_reci_image4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/iv_chef_page_chef_info_chef_reci_image5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</FrameLayout>

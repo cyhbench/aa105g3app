@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidbelieve.drawerwithswipetabs">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/new_logo3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Searchable -->
+        <activity
+            android:name="com.SearchableActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity android:name="com.main.LoginDialogActivity" />
+        <activity android:name="com.recipe.RecipeDetailActivity" />
+        <activity android:name="com.member.MemberUpdateActivity" />
+        <activity android:name="com.collection.CollectionDetail" />
+        <activity android:name="com.recipe.RecipeMainActivity" />
+        <activity android:name="com.collection.CollectionDetailRecipeMainActivity" />
+        <activity android:name="com.collection.CollectionDetailMemberMainActivity" />
+        <activity android:name="com.MemberPageMainActivity" />
+        <activity android:name="com.ChefPageMainActivity" />
+        <activity android:name="com.collection.CollectionDetailChefMainActivity" />
+        <activity android:name="com.talk.TalkMainActivity" />
+        <activity android:name="com.chef_order_list.ChefOrderListInsertActivity" />
+        <activity android:name="com.chef_order_list.ChefOrderListUpdateActivity" />
+        <activity android:name="com.chef_order_list.ChefOrderListUpdateForChefActivity" />
+        <activity android:name="com.browser.BrowserMemberMainActivity" />
+        <activity android:name="com.recipe.RecipeInsertActivity" />
+        <activity android:name="com.recipe.RecipeContInsertActivity" />
+        <activity android:name="com.browser.BrowseOneMemberMainActivity" />
+    </application>
+
+</manifest>

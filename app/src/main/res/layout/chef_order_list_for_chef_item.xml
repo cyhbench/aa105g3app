@@ -1,0 +1,139 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_order_chef_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left|top"
+            android:src="@drawable/new_logo3"/>
+
+        <TextView
+            android:id="@+id/tv_order_chef_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_order_chef_image"
+            android:paddingTop="3dp"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:textSize="10dp"
+            android:text="私廚名"
+            android:layout_alignLeft="@+id/iv_order_chef_image"/>
+
+        <TextView
+            android:id="@+id/tv_order_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:layout_toRightOf="@+id/iv_order_chef_image"
+            android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+            android:text="價格"/>
+
+        <TextView
+            android:id="@+id/tv_order_act_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+            android:text="日期"
+            android:layout_below="@+id/tv_order_cost"
+            android:layout_alignLeft="@+id/tv_order_cost"
+            />
+
+        <TextView
+            android:id="@+id/tv_order_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+            android:layout_below="@+id/tv_order_act_date"
+            android:layout_alignLeft="@+id/tv_order_cost"
+            android:text="地點"/>
+
+            <TextView
+                android:id="@+id/tv_order_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                android:layout_below="@+id/tv_order_place"
+                android:layout_alignLeft="@+id/tv_order_cost"
+                android:text="狀態"/>
+
+            <TextView
+                android:id="@+id/tv_order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_below="@+id/tv_order_place"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="定單產生時間"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<TextView-->
+                <!--android:id="@+id/tv_browse_chef_chef_menu"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="菜單"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_browse_chef_chef_intr"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="簡介"-->
+                <!--android:layout_toLeftOf="@+id/tv_browse_recipe_add_in_coll"/>-->
+
+            <TextView
+                android:id="@+id/tv_browse_recipe_add_in_coll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"/>
+            <!--android:text=" (長按加入收藏)"-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/browser_chef_add_collection"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/like_red"-->
+                <!--android:visibility="gone"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/browser_chef_remove_from_collection"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/like_black"/>-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
