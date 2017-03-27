@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project Files" />
-    <option name="defaultScopeName" value="Project Files" />
-    <option name="SEARCH_SCOPE" value="Project Files" />
+    <option name="customScope" value="File 'C:\aa105g3app_20170118_0028\aa105g3app\app\src\main\java\com\MainActivity.java'" />
+    <option name="defaultScopeName" value="File 'C:\aa105g3app_20170118_0028\aa105g3app\app\src\main\java\com\MainActivity.java'" />
+    <option name="SEARCH_SCOPE" value="File 'C:\aa105g3app_20170118_0028\aa105g3app\app\src\main\java\com\MainActivity.java'" />
   </component>
 </application>
